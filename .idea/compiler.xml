@@ -7,13 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="telegram-random-joke-bot" />
+        <module name="telegram-houser-bot" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="telegram-random-joke-bot" options="-parameters" />
+      <module name="telegram-houser-bot" options="-parameters" />
     </option>
+  </component>
+  <component name="RmicSettings">
+    <option name="IS_EANABLED" value="true" />
+    <option name="GENERATE_IIOP_STUBS" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="true" />
   </component>
 </project>

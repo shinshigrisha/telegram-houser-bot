@@ -1,4 +1,4 @@
-package io.proj3ct.telegramjokebot.model;
+package io.proj3ct.telegramjokebot.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
