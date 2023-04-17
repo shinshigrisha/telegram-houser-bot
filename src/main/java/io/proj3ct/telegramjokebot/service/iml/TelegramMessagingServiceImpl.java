@@ -2,19 +2,11 @@ package io.proj3ct.telegramjokebot.entity.service.impl;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.proj3ct.telegramjokebot.service.HttpRequestService;
+import io.proj3ct.telegramjokebot.service.MessageProvider;
+import io.proj3ct.telegramjokebot.service.TelegramMessagingService;
 import lombok.extern.slf4j.Slf4j;
-import io.proj3ct.telegramjokebot.entity.constant.ChatStage;
-import io.proj3ct.telegramjokebot.entity.constant.Language;
-import io.proj3ct.telegramjokebot.entity.dto.telegram.send.*;
-import io.proj3ct.telegramjokebot.entity.dto.telegram.send.photo.SendPhotoDTO;
-import io.proj3ct.telegramjokebot.entity.dto.telegram.send.text.SendMessageDTO;
-import io.proj3ct.telegramjokebot.entity.dto.telegram.update.TelegramResponseDTO;
-import io.proj3ct.telegramjokebot.entity.dto.telegram.update.TelegramUpdateDTO;
-import io.proj3ct.telegramjokebot.entity.entity.Chat;
-import io.proj3ct.telegramjokebot.entity.entity.City;
-import io.proj3ct.telegramjokebot.entity.entity.Home;
-import io.proj3ct.telegramjokebot.entity.entity.SearchParameter;
-import io.proj3ct.telegramjokebot.entity.service.*;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
