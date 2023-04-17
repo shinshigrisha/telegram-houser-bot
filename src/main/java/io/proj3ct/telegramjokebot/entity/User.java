@@ -1,36 +1,34 @@
 package io.proj3ct.telegramjokebot.entity;
 
-
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Data;
 
-@Entity(name = "usersDataTable") // This tells Hibernate to make a table out of this class
+
+@Entity
+@Table(name = "USER")
 @Data
 public class User {
 
     @Id
-    private Long chatId;
+    @Column(name = "USER_ID")
+    private Long id;
 
-    private Boolean embedeJoke;
+    @Column(name = "IS_BOT")
+    private Boolean isBot;
 
-    private String phoneNumber;
-
-    private java.sql.Timestamp registeredAt;
-
+    @Column(name = "FIRST_NAME", length = 150)
     private String firstName;
 
+    @Column(name = "LAST_NAME", length = 150)
     private String lastName;
 
-    private String userName;
+    @Column(name = "USERNAME", length = 150)
+    private String username;
 
-    private Double latitude;
+    @Column(name = "LANGUAGE_CODE", length = 3)
+    private String languageCode;
 
-    private Double longitude;
-
-    private String bio;
-
-    private String description;
-
-    private String pinnedMessage;
 }

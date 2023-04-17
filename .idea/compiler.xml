@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
+    <excludeFromCompile>
+      <directory url="file://$USER_HOME$/Downloads/Wolfram-Language-2023.1.0/Wolfram-Language/lib" includeSubdirectories="true" />
+    </excludeFromCompile>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
-      <profile name="Maven default annotation processors profile" enabled="true">
+      <profile name="Maven default annotation processors profile" enabled="true" procOnly="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="telegram-houser-bot" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="telegram-houser-bot" target="20" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
+    <option name="GENERATE_NO_WARNINGS" value="true" />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="telegram-houser-bot" options="-parameters" />
     </option>
